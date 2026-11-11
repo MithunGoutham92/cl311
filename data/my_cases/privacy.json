@@ -1,0 +1,13 @@
+[
+  {
+    "text": "Someone left an old couch and trash bags in the alley behind 1200 S Fawcett Ave. I'm Ana Ruiz, call me at 253-555-0142.",
+    "must_hide": [
+      "Ana Ruiz",
+      "253-555-0142"
+    ],
+    "must_keep": [
+      "Fawcett"
+    ],
+    "note": "Sample case: change it or replace it with your own."
+  }
+]

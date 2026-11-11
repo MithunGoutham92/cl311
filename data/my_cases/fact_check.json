@@ -1,0 +1,13 @@
+[
+  {
+    "reply": "Your ticket number is T-0007. Reports about tree problems go to Planning & Development Services. A crew will come tomorrow.",
+    "ticket_id": "T-0007",
+    "team": "planning_development",
+    "sources": [
+      "ticket",
+      "policy",
+      null
+    ],
+    "note": "Sample case: change it or replace it with your own."
+  }
+]

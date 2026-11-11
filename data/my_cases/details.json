@@ -1,0 +1,10 @@
+[
+  {
+    "report": "The street light at the corner of N 26th St and Proctor St has been out since Friday.",
+    "location_words": [
+      "26th",
+      "Proctor"
+    ],
+    "note": "Sample case: change it or replace it with your own."
+  }
+]

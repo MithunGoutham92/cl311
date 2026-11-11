@@ -1,0 +1,373 @@
+{
+  "about": "Ten real 311 reports from Tacoma, WA, taken from SeeClickFix, with labels taken from the source.",
+  "licence": "Report text: SeeClickFix (seeclickfix.com), CC BY-NC-SA 3.0 US (https://creativecommons.org/licenses/by-nc-sa/3.0/us/). Use for non-commercial teaching only, keep this notice, and share changed copies under the same licence.",
+  "label_rules": {
+    "team": "The department that the Tacoma FIRST 311 page lists for the report's request type (see policy.txt).",
+    "street_words": "Words of the report's street address that also appear in the report text. Details must keep at least one in location.",
+    "fact_check": "The reply sentences are built from policy.txt and the ticket. expected_sources says which one backs up each sentence; null means nothing backs it up.",
+    "privacy": "The last sentence of each privacy text (name, phone or student number, email) is made up and added by us, because the public source data has no personal details. 555-01xx phone numbers and example.com email addresses are reserved for examples."
+  },
+  "cases": [
+    {
+      "id": 1,
+      "source": "SeeClickFix issue 23200310, Tacoma, WA (https://seeclickfix.com/issues/23200310). CC BY-NC-SA 3.0 US, seeclickfix.com.",
+      "request_type": "Traffic Sign - Report missing or damaged",
+      "report": "3840 N 8th st. Stop sign down",
+      "address": "3840 N 8th St Tacoma, Washington, 98406",
+      "expected": {
+        "team": "public_works",
+        "street_words": [
+          "8th"
+        ]
+      },
+      "fact_check": {
+        "reply": "Your ticket number is T-0001. Reports about missing or damaged traffic signs go to Public Works. The estimated completion time is 42 business days. A crew will fix this within 24 hours.",
+        "ticket": {
+          "id": "T-0001",
+          "team": "public_works"
+        },
+        "expected_sources": [
+          "ticket",
+          "policy",
+          "policy",
+          null
+        ]
+      },
+      "privacy": {
+        "text": "3840 N 8th st. Stop sign down Thanks, Jordan Example. Call 206-555-0101 or write to jordan@example.com.",
+        "must_hide": [
+          "Jordan Example",
+          "206-555-0101",
+          "jordan@example.com"
+        ],
+        "must_keep": [
+          "8th"
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "source": "SeeClickFix issue 23193315, Tacoma, WA (https://seeclickfix.com/issues/23193315). CC BY-NC-SA 3.0 US, seeclickfix.com.",
+      "request_type": "Street Light Out Request",
+      "report": "Street Lights going east and west on 64th from pacific to McKinley are out",
+      "address": "216 E 64th St Tacoma, Washington, 98404",
+      "expected": {
+        "team": "public_works",
+        "street_words": [
+          "64th"
+        ]
+      },
+      "fact_check": {
+        "reply": "Your ticket number is T-0002. Reports about a street light that is out go to Public Works. The estimated completion time is 10 business days.",
+        "ticket": {
+          "id": "T-0002",
+          "team": "public_works"
+        },
+        "expected_sources": [
+          "ticket",
+          "policy",
+          "policy"
+        ]
+      },
+      "privacy": {
+        "text": "Street Lights going east and west on 64th from pacific to McKinley are out Contact: Jordan Example / 206-555-0102 / jordan@example.com",
+        "must_hide": [
+          "Jordan Example",
+          "206-555-0102",
+          "jordan@example.com"
+        ],
+        "must_keep": [
+          "64th"
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "source": "SeeClickFix issue 23193087, Tacoma, WA (https://seeclickfix.com/issues/23193087). CC BY-NC-SA 3.0 US, seeclickfix.com.",
+      "request_type": "Street Light Out Request",
+      "report": "East 64th Street just passed D Street to street lights out very dark dangerous to walk. Both lights are right next to each other. On right side of the street is coming from Pacific.",
+      "address": "409 E 64th St Tacoma, Washington, 98404",
+      "expected": {
+        "team": "public_works",
+        "street_words": [
+          "64th"
+        ]
+      },
+      "fact_check": {
+        "reply": "Your ticket number is T-0003. Reports about a street light that is out go to Public Works. The estimated completion time for a street light that is out is 15 business days.",
+        "ticket": {
+          "id": "T-0003",
+          "team": "public_works"
+        },
+        "expected_sources": [
+          "ticket",
+          "policy",
+          null
+        ]
+      },
+      "privacy": {
+        "text": "East 64th Street just passed D Street to street lights out very dark dangerous to walk. Both lights are right next to each other. On right side of the street is coming from Pacific. My name is Jordan Example, my phone is 206-555-0103, and my email is jordan@example.com.",
+        "must_hide": [
+          "Jordan Example",
+          "206-555-0103",
+          "jordan@example.com"
+        ],
+        "must_keep": [
+          "64th"
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "source": "SeeClickFix issue 23193812, Tacoma, WA (https://seeclickfix.com/issues/23193812). CC BY-NC-SA 3.0 US, seeclickfix.com.",
+      "request_type": "Pothole / Street Repair or Maintenance",
+      "report": "I wish to follow up on my previous request concerning the water runoff in the vicinity of Mason and N 19th St. The request is # 18443791 and was submitted in February. No action was taken and we are now back into the rainy season.",
+      "address": "N 19th St & N Mason Ave Tacoma, WA, 98406, USA",
+      "expected": {
+        "team": "public_works",
+        "street_words": [
+          "19th",
+          "Mason"
+        ]
+      },
+      "fact_check": {
+        "reply": "Your ticket number is T-0004. Reports about potholes and street repair go to Public Works. The estimated completion time is 5 business days.",
+        "ticket": {
+          "id": "T-0004",
+          "team": "public_works"
+        },
+        "expected_sources": [
+          "ticket",
+          "policy",
+          "policy"
+        ]
+      },
+      "privacy": {
+        "text": "I wish to follow up on my previous request concerning the water runoff in the vicinity of Mason and N 19th St. The request is # 18443791 and was submitted in February. No action was taken and we are now back into the rainy season. Thanks, Jordan Example. Call 206-555-0104 or write to jordan@example.com.",
+        "must_hide": [
+          "Jordan Example",
+          "206-555-0104",
+          "jordan@example.com"
+        ],
+        "must_keep": [
+          "19th",
+          "Mason"
+        ]
+      }
+    },
+    {
+      "id": 5,
+      "source": "SeeClickFix issue 23194952, Tacoma, WA (https://seeclickfix.com/issues/23194952). CC BY-NC-SA 3.0 US, seeclickfix.com.",
+      "request_type": "Illegal Dumping, Garbage & Debris Request PUBLIC PROPERTY",
+      "report": "We collected a bag full of trash that was in the street and left it at the corner of E 54th and E J Sts for pick up. Thanks. R",
+      "address": "E 54th St & E J St Tacoma, WA, 98404, USA",
+      "expected": {
+        "team": "environmental_services",
+        "street_words": [
+          "54th",
+          "J"
+        ]
+      },
+      "fact_check": {
+        "reply": "Your ticket number is T-0005. Reports about illegal dumping, garbage and debris on public property go to Environmental Services. The estimated completion time is 10 business days. There is a $25 fee for this request.",
+        "ticket": {
+          "id": "T-0005",
+          "team": "environmental_services"
+        },
+        "expected_sources": [
+          "ticket",
+          "policy",
+          "policy",
+          null
+        ]
+      },
+      "privacy": {
+        "text": "We collected a bag full of trash that was in the street and left it at the corner of E 54th and E J Sts for pick up. Thanks. R Contact: Jordan Example / 206-555-0105 / jordan@example.com",
+        "must_hide": [
+          "Jordan Example",
+          "206-555-0105",
+          "jordan@example.com"
+        ],
+        "must_keep": [
+          "54th",
+          "J"
+        ]
+      }
+    },
+    {
+      "id": 6,
+      "source": "SeeClickFix issue 23204630, Tacoma, WA (https://seeclickfix.com/issues/23204630). CC BY-NC-SA 3.0 US, seeclickfix.com.",
+      "request_type": "Illegal Dumping, Garbage & Debris Request PUBLIC PROPERTY",
+      "report": "Someone illegally dumped a couch and tv on the school property on north 11th right across from my home. Please remove. Thank you.",
+      "address": "4313-4399 N 11th St Tacoma, Washington, 98406",
+      "expected": {
+        "team": "environmental_services",
+        "street_words": [
+          "11th"
+        ]
+      },
+      "fact_check": {
+        "reply": "Your ticket number is T-0006. Reports about illegal dumping, garbage and debris on public property go to Environmental Services. The estimated completion time is 10 business days.",
+        "ticket": {
+          "id": "T-0006",
+          "team": "environmental_services"
+        },
+        "expected_sources": [
+          "ticket",
+          "policy",
+          "policy"
+        ]
+      },
+      "privacy": {
+        "text": "Someone illegally dumped a couch and tv on the school property on north 11th right across from my home. Please remove. Thank you. My name is Jordan Example, my phone is 206-555-0106, and my email is jordan@example.com.",
+        "must_hide": [
+          "Jordan Example",
+          "206-555-0106",
+          "jordan@example.com"
+        ],
+        "must_keep": [
+          "11th"
+        ]
+      }
+    },
+    {
+      "id": 7,
+      "source": "SeeClickFix issue 23205278, Tacoma, WA (https://seeclickfix.com/issues/23205278). CC BY-NC-SA 3.0 US, seeclickfix.com.",
+      "request_type": "Special Street Sweeping Request",
+      "report": "lots of leaves on east side of Pearl clogging catch basin. College does a good job clearing west side of Pearl",
+      "address": "1221 S Pearl St Tacoma, Washington, 98465",
+      "expected": {
+        "team": "environmental_services",
+        "street_words": [
+          "Pearl"
+        ]
+      },
+      "fact_check": {
+        "reply": "Your ticket number is T-0007. Reports about special street sweeping go to Environmental Services. The estimated completion time for special street sweeping is 12 business days.",
+        "ticket": {
+          "id": "T-0007",
+          "team": "environmental_services"
+        },
+        "expected_sources": [
+          "ticket",
+          "policy",
+          null
+        ]
+      },
+      "privacy": {
+        "text": "lots of leaves on east side of Pearl clogging catch basin. College does a good job clearing west side of Pearl Thanks, Jordan Example. Call 206-555-0107 or write to jordan@example.com.",
+        "must_hide": [
+          "Jordan Example",
+          "206-555-0107",
+          "jordan@example.com"
+        ],
+        "must_keep": [
+          "Pearl"
+        ]
+      }
+    },
+    {
+      "id": 8,
+      "source": "SeeClickFix issue 23206420, Tacoma, WA (https://seeclickfix.com/issues/23206420). CC BY-NC-SA 3.0 US, seeclickfix.com.",
+      "request_type": "Overgrowth Vegetation on Sidewalk/Street",
+      "report": "Tree branches hanging low over the sidewalk.",
+      "address": "2915 Marine View Dr Tacoma, Washington, 98422",
+      "expected": {
+        "team": "planning_development",
+        "street_words": []
+      },
+      "fact_check": {
+        "reply": "Your ticket number is T-0008. Reports about plants growing over a sidewalk or street go to Planning & Development Services. The estimated completion time is 14 business days.",
+        "ticket": {
+          "id": "T-0008",
+          "team": "planning_development"
+        },
+        "expected_sources": [
+          "ticket",
+          "policy",
+          "policy"
+        ]
+      },
+      "privacy": {
+        "text": "Tree branches hanging low over the sidewalk. Contact: Jordan Example / 206-555-0108 / jordan@example.com",
+        "must_hide": [
+          "Jordan Example",
+          "206-555-0108",
+          "jordan@example.com"
+        ],
+        "must_keep": []
+      }
+    },
+    {
+      "id": 9,
+      "source": "SeeClickFix issue 23206884, Tacoma, WA (https://seeclickfix.com/issues/23206884). CC BY-NC-SA 3.0 US, seeclickfix.com.",
+      "request_type": "Overgrowth Vegetation on Sidewalk/Street",
+      "report": "the large grass plant has overgrown for many years. city of Tacoma, please remove the plant at the utility pole. it is a hassle for homeowners nearby to control it.",
+      "address": "1733 Bridgeview Dr Tacoma, Washington, 98406",
+      "expected": {
+        "team": "planning_development",
+        "street_words": []
+      },
+      "fact_check": {
+        "reply": "Your ticket number is T-0009. Reports about plants growing over a sidewalk or street go to Planning & Development Services. The estimated completion time is 14 business days. Your report has been sent to the Fire Department.",
+        "ticket": {
+          "id": "T-0009",
+          "team": "planning_development"
+        },
+        "expected_sources": [
+          "ticket",
+          "policy",
+          "policy",
+          null
+        ]
+      },
+      "privacy": {
+        "text": "the large grass plant has overgrown for many years. city of Tacoma, please remove the plant at the utility pole. it is a hassle for homeowners nearby to control it. My name is Jordan Example, my phone is 206-555-0109, and my email is jordan@example.com.",
+        "must_hide": [
+          "Jordan Example",
+          "206-555-0109",
+          "jordan@example.com"
+        ],
+        "must_keep": []
+      }
+    },
+    {
+      "id": 10,
+      "source": "SeeClickFix issue 23197053, Tacoma, WA (https://seeclickfix.com/issues/23197053). CC BY-NC-SA 3.0 US, seeclickfix.com.",
+      "request_type": "Leash Law Violation",
+      "report": "Off leash dog and owner on a Saturday morning at Five Mile Drive",
+      "address": "5682-5692 Five Mile Dr Tacoma, WA, 98407, USA",
+      "expected": {
+        "team": "animal_control",
+        "street_words": [
+          "Five",
+          "Mile"
+        ]
+      },
+      "fact_check": {
+        "reply": "Your ticket number is T-0010. Reports about leash law violations go to Animal Control. The estimated completion time is 10 business days.",
+        "ticket": {
+          "id": "T-0010",
+          "team": "animal_control"
+        },
+        "expected_sources": [
+          "ticket",
+          "policy",
+          "policy"
+        ]
+      },
+      "privacy": {
+        "text": "Off leash dog and owner on a Saturday morning at Five Mile Drive Thanks, Jordan Example. Call 206-555-0110 or write to jordan@example.com.",
+        "must_hide": [
+          "Jordan Example",
+          "206-555-0110",
+          "jordan@example.com"
+        ],
+        "must_keep": [
+          "Five",
+          "Mile"
+        ]
+      }
+    }
+  ]
+}

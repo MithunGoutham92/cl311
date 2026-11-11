@@ -1,0 +1,10 @@
+[
+  {
+    "message": "Hay un bache muy grande en la calle S 38th, cerca de la escuela.",
+    "language": "Spanish",
+    "keep": [
+      "38th"
+    ],
+    "note": "Sample case: change it or replace it with your own."
+  }
+]
