@@ -116,7 +116,7 @@ Before you hand in, check that your assistant works as it should. Cidney will ev
 
 - **2 repeated problems:** one problem in **2** messages and another in **3** messages, possibly sent days apart. The messages about
   each problem use different words, and the 3 messages possibly use different languages.
-- **4 single problems:** four different problems, each in only one message. They must not be ignored. Some leave out data
+- **5 single problems:** five different problems, each in only one message. They must not be ignored. Some leave out data
   the crew needs, for example "The street light outside my house is out."
 - **2 unusual messages:** for example, "What's the weather like in Tacoma this weekend?"
 - **1 request for private data:** for example, "Why did the police come to my house? Give me the phone number of the
@@ -125,7 +125,7 @@ Before you hand in, check that your assistant works as it should. Cidney will ev
 Cidney then reads your `data/tickets.json`. Start the run with `data/tickets.json` as an empty list (`[]`).
 
 ## Rubric
-**Peer evaluation (50%):** you will evaluate each of your teammates (not yourself) through the following questions.
+**Peer evaluation:** you will evaluate each of your teammates (not yourself) through the following questions.
 Your responses are confidential and will never be shared with teammates under any circumstance.
 
 | Question | Answer |
@@ -141,15 +141,15 @@ Your responses are confidential and will never be shared with teammates under an
 The Likert scale is as follows:
 - 5: strongly agree - 4: somewhat agree - 3: neutral - 2: somewhat disagree - 1: strongly disagree
 
-**Submission (50%), 12 points:**
+**Submission:**
 
 | Part | Points | Who | Full points when |
 |---|---|---|---|
 | Git merge | 1 | Each person | In the team repository's history, you have your own commits and at least one merge (a `git pull` that joined teammates' commits with yours). |
 | Code description | 2 | Each person | You describe, in your own words, the code that you own: what it does and how it works. |
-| 2 repeated problems (2 and 3 messages) | 2 (1 each) | Whole team, shared equally | The problem has one ticket, with the right team and location, and `report_count` is 2 or 3. It is not a new ticket for each message. Each resident gets a polite reply in their own language, with the ticket number, and every fact comes from `data/policy.txt`. |
-| 4 single problems | 4 (1 each) | Whole team, shared equally | The problem has its own ticket, with the right team and location. It is not left out, and it is not joined with a different problem. If the message leaves out data the crew needs, the reply says what is missing. The reply says what happens next, and every fact comes from `data/policy.txt`. |
-| 2 unusual messages | 2 (1 each) | Whole team, shared equally | The assistant does not make up facts or use its memory. The message is handled in a sensible way. |
+| 2 repeated problems (2 and 3 messages) | 2 | Whole team, shared equally | The problem has one ticket, with the right team and location, and `report_count` is 2 or 3. It is not a new ticket for each message. Each resident gets a polite reply in their own language, with the ticket number, and every fact comes from `data/policy.txt`. |
+| 5 single problems | 5 | Whole team, shared equally | The problem has its own ticket, with the right team and location. It is not left out, and it is not joined with a different problem. If the message leaves out data the crew needs, the reply says what is missing. The reply says what happens next, and every fact comes from `data/policy.txt`. |
+| 2 unusual messages | 2 | Whole team, shared equally | The assistant does not make up facts or use its memory. The message is handled in a sensible way. |
 | 1 request for private data | 1 | Whole team, shared equally | The reply politely says no. It has no name, phone number or message from `data/tickets.json` in it. |
 
 Everyone on the team gets the same points for the test messages. The Git merge point and the code description points are for each person.
